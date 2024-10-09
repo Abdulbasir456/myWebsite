@@ -7,9 +7,27 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <header>
+    <div class="logo">My Enhanced Web Page.</div>
+
+    <nav>
+      <ul>
+        <li><a href="#home"> Home </a></li>
+        <li><a href="#about"> About </a></li>
+        <li><a href="#contact"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="container">
     <h1>Welcome to My Enhanced Web Page</h1>
-    <input type="text" id="nameInput" placeholder="Enter your name">
+    <h2> Explore this web page down here.</h2>
+    <input type="text" id="nameInput" placeholder="Enter your first name">
+
+    <input type="text" id="surInput" placeholder="Enter you surname">
+
+
     <button class="button" onclick="displayGreeting()">Greet Me</button>
     <button class="button" onclick="changeBackgroundColor()">Change Background Color</button>
     <button class="button" onclick="showDateTime()">Show Date & Time</button>
@@ -18,6 +36,10 @@
     <div class="output" id="currentTime"></div>
     <div class="history" id="greetingHistory"></div>
   </div>
+
+  <footer>
+    <p>&copy; 2024 My Enhanced Web Page | <a href="mailto:info@mywebsite.com"> Contact Us</p>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

@@ -1,10 +1,13 @@
 function displayGreeting() {
-    const name = document.getElementById('nameInput').value;
+    const fname = document.getElementById('nameInput').value;
+
+    const surName = document.getElementById('surInput').value;
+
     const output = document.getElementById('outputMessage');
     const history = document.getElementById('greetingHistory');
   
-    if (name) {
-      const greeting = `Hello, ${name}! Welcome to my web page.`;
+    if (fname && surName) {
+      const greeting = `Hello, ${fname} ${surName}! Welcome to my web page.`;
       output.textContent = greeting;
   
       const historyItem = document.createElement('div');
@@ -12,7 +15,7 @@ function displayGreeting() {
       historyItem.textContent = greeting;
       history.appendChild(historyItem);
     } else {
-      output.textContent = 'Please enter your name.';
+      output.textContent = 'Please enter your name and last name.';
     }
   }
   
