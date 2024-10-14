@@ -46,3 +46,17 @@ function displayGreeting() {
   // Update the current time every second
   setInterval(updateCurrentTime, 1000);
   
+
+  function validateForm(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if ( name && email && message) {
+      document.getElementById("form-result").innerText = "Thank you, your message has been sent!";
+      document.getElementById("contact-form").reset();
+    } else {
+      document.getElementById("form-result").innerText = "please fill out all fields.";
+    }
+  }

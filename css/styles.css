@@ -170,3 +170,83 @@ footer a {
 .dark-theme footer {
   background-color: #1a237e;
 }
+
+
+.content-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.content-section h3, p {
+ margin-bottom: 0.5rem;
+ font-size: 2rem;
+}
+
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #3f51b5;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #1a237e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+
+.contact-box {
+  padding: 1rem;
+  border: 2px solid;
+  display: inline-block;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+
+#contact-form {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: item;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+
+#contact-form input, #contact-form textarea {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+#contact-form button {
+  padding: 0.8rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
