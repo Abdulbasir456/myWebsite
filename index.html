@@ -1,4 +1,4 @@
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@
 
   <div class="container">
     <h1>Bringing Parcels to your Homes</h1>
-  
+
 
   </div>
 
@@ -81,3 +81,75 @@
 </body>
 </html>
 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Web Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Enhanced Web Page</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Bringing Parcels to Your Homes</h1>
+  </div>
+
+  <div class="container-part">
+    <input type="text" id="nameInput" class="new" placeholder="Enter your first name">
+    <input type="text" id="surInput" placeholder="Enter your surname">
+    <button class="button" onclick="displayGreeting()">Greet Me</button>
+    
+    <div class="output" id="outputMessage"></div>
+    <div class="history" id="greetingHistory"></div>
+  </div>
+
+  <div class="output-time" id="currentTime"></div>
+
+  <div class="form-container">
+    <div class="form-section">
+      <h2>Get in Touch</h2>
+      <form id="contact-form" onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <p id="form-result"></p>
+
+  <button class="button" onclick="changeBackgroundColor()">Change Background Color</button>
+  <button class="button" onclick="showDateTime()">Show Date & Time</button>
+  <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:565655">565655</a></p>
+    <p>Email: <a href="mailto:adgdagdg@gmail.com">adgdagdg@gmail.com</a></p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

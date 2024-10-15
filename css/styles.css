@@ -411,3 +411,83 @@ footer {
     max-width: none; /* Remove max-width on small screens */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*extra*/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px; /* Margin around the container */
+}
+
+.form-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px; /* Max width for sections */
+  margin: 10px; /* Space between sections */
+}
+
+footer {
+  background-color: #808080; /* Gray background */
+  color: white;
+  text-align: center;
+  padding: 40px 20px; /* Increased height */
+  position: relative; /* Changed to relative */
+  width: 100%;
+  margin-top: 20px; /* Space above footer */
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0; /* Space above and below paragraphs */
+}
+
+footer a {
+  color: #ffeb3b; /* Link color */
+  text-decoration: none; /* No underline by default */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #1a237e; /* Darker shade on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .form-section {
+    width: 90%; /* Use more width */
+    max-width: none; /* Remove max-width on small screens */
+    margin: 10px auto; /* Center sections */
+  }
+}
