@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,59 +22,62 @@
   </header>
 
   <div class="container">
-    <h1>Welcome to My Enhanced Web Page</h1>
-    <h2> Explore this web page down here.</h2>
+    <h1>Bringing Parcels to your Homes</h1>
+  
 
+  </div>
 
+  <div class="container-part">
     <input type="text" id="nameInput" class="new" placeholder="Enter your first name">
-
     <input type="text" id="surInput" placeholder="Enter you surname">
-
-
     <button class="button" onclick="displayGreeting()">Greet Me</button>
     
     <div class="output" id="outputMessage"></div>
-    <div class="output" id="currentTime"></div>
+    
     <div class="history" id="greetingHistory"></div>
   </div>
 
+  <div class="output-time" id="currentTime"></div>
 
 
-  <section id="contact" class="contact-section">
-    <h2> Form </h2>
-    <div class="contact-box">
-      <p>Phone: <a href="djlkdjf">565655</a></p>
-      <p>Emaill: <a href="djjgdjl">adgdag dg@gmail.com</a></p>
+
+
+  <div class="form-container">
+    <div class="form-section">
+      <h2>Get in Touch</h2>
+      <form id="contact-form" onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
+  
+        <button type="submit">Submit</button>
+      </form>
     </div>
-
-  <form id="contact-form" onsubmit="validateForm(event)">
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" placeholder="Enter your own message" required></textarea>
-
-    <button type="submit">Submit</button>
-
-  </form>
+  
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p>Phone: <a href="tel:565655">565655</a></p>
+        <p>Email: <a href="mailto:adgdagdg@gmail.com">adgdagdg@gmail.com</a></p>
+      </div>
+    </section>
+  </div>
+  
 
   <p id="form-result"></p>
-
-</section>
-
 
 
   <button class="button" onclick="changeBackgroundColor()">Change Background Color</button>
     <button class="button" onclick="showDateTime()">Show Date & Time</button>
     <button class="button" onclick="toggleTheme()">Toggle Theme</button>
 
-  
 
   <script src="js/script.js"></script>
 </body>
 </html>
-
 
