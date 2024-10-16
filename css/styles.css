@@ -9,10 +9,6 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   transition: background-color 0.5s;
-  background-image: url('../images/delivery-image.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  background-attachment: fixed; 
   color: #fff; 
   margin: 0;
 }
