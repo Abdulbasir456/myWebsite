@@ -257,9 +257,9 @@ input[type="text"], input[type="email"], textarea {
   padding: 20px;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  max-width: 350px; /* Max width for form section */
+  max-width: 350px; 
   flex: 1; /* Allow to grow to fill space */
-  margin-right: 20px; /* Space between sections */
+  margin-right: 20px; 
 }
 
 .form-container {
@@ -279,11 +279,11 @@ input[type="text"], input[type="email"], textarea {
 }
 
 footer {
-  background-color: #808080; /* Gray background */
+  background-color: #808080; 
   color: white;
   text-align: center;
-  padding: 40px 20px; /* Increased height */
-  position: relative; /* Changed to relative */
+  padding: 40px 20px; 
+  position: relative; 
   width: 100%;
   margin-top: 20px; /* Space above footer */
 }
