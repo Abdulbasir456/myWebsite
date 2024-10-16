@@ -111,11 +111,14 @@
   <div class="container-part">
     <input type="text" id="nameInput" class="new" placeholder="Enter your first name">
     <input type="text" id="surInput" placeholder="Enter your surname">
-    <button class="button" onclick="displayGreeting()">Greet Me</button>
+    <button class="button-greet" onclick="displayGreeting()">Greet Me</button>
     
-    <div class="output" id="outputMessage"></div>
-    <div class="history" id="greetingHistory"></div>
+    
   </div>
+
+  <button class="button" onclick="changeBackgroundColor()">Change Background Color</button>
+  <button class="button" onclick="showDateTime()">Show Date & Time</button>
+  <button class="button" onclick="toggleTheme()">Toggle Theme</button>
 
   <div class="output-time" id="currentTime"></div>
 
@@ -139,10 +142,13 @@
 
   <p id="form-result"></p>
 
-  <button class="button" onclick="changeBackgroundColor()">Change Background Color</button>
-  <button class="button" onclick="showDateTime()">Show Date & Time</button>
-  <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+  <div class="output-history">
+    <div class="output" id="outputMessage"></div>
+    <div class="history" id="greetingHistory"></div>
 
+  </div>
+
+ 
   <footer>
     <h2>Contact Us</h2>
     <p>Phone: <a href="tel:565655">565655</a></p>
